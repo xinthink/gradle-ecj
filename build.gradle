@@ -1,0 +1,7 @@
+apply from: "$snippetsRepo/groovy-prj.gradle"
+//apply from: '../gradle-snippets/groovy-prj.gradle'
+
+dependencies {
+    compile gradleApi()
+    groovy localGroovy()
+}
