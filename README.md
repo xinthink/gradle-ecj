@@ -3,8 +3,8 @@ This a plugin for using the [Eclipse JDT core](http://eclipse.org/jdt/core/) bat
 
 The very first version of gradle-ecj (1.0-Beta):
 
-    - requires Gradle 1.0-milestone-8a and later
-    - integrates [ECJ 3.7.1](http://mvnrepository.com/artifact/org.eclipse.jdt.core.compiler/ecj)
+- requires Gradle 1.0-milestone-8a and later
+- integrates [ECJ 3.7.1](http://mvnrepository.com/artifact/org.eclipse.jdt.core.compiler/ecj)
 
 ## Usage
 ### Apply the plugin
