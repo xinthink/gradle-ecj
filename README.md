@@ -1,4 +1,4 @@
-＃ Gradle ECJ Plugin
+# The ECJ Plugin for Gradle
 This a plugin for using the Eclipse JDT core batch compler (ECJ) in [Gradle](http://gradle.org) builds.
 
 The very first version of gradle-ecj (1.0-Beta):
