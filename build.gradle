@@ -1,2 +1,17 @@
 apply from: "$snippetsRepo/gradle-plugin-prj.gradle"
 //apply from: '../gradle-snippets/gradle-plugin-prj.gradle'
+
+apply plugin: 'ecj'
+
+buildscript {
+    repositories {
+        add(new org.apache.ivy.plugins.resolver.URLResolver()) {
+            name = 'GitHub'
+            addArtifactPattern 'http://cloud.github.com/downloads/[organisation]/[module]/[module]-[revision].[ext]'
+        }
+    }
+
+    dependencies {
+        classpath 'xinthink:gradle-ecj:1.0-Beta' // use github id as organisation
+    }
+}

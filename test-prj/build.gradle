@@ -7,7 +7,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'xink.gradle:gradle-ecj:1.0-Beta'
+        classpath 'xink.gradle:gradle-ecj:1.0-Beta' // use groupId when using local repo
     }
 }
 
