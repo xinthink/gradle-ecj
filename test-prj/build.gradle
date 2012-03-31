@@ -1,0 +1,45 @@
+apply plugin: 'groovy'
+apply plugin: 'ecj'
+
+buildscript {
+    repositories {
+        mavenLocal()
+    }
+
+    dependencies {
+        classpath 'xink.gradle:gradle-ecj:1.0-Beta'
+    }
+}
+
+// -------------------------------------
+// Compiler settings
+//
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+ecj {
+    encoding = 'utf-8'
+
+    warn << 'emptyBlock'
+    //warn << 'enumSwitch' << 'unused'
+    //warn -= 'typeHiding'
+
+    // warn = [ 'none' ] // suppress all warnings
+
+    //err << 'unused'
+}
+
+// -------------------------------------
+// Dependencies
+//
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    groovy "org.codehaus.groovy:groovy:1.8.6"
+
+    testCompile (
+        'junit:junit:4.10',
+    )
+}
