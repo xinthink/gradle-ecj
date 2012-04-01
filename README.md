@@ -31,8 +31,8 @@ buildscript {
 By default, ecj plugin use the following compilation options or flags:
 
   - UTF-8 encoding
-  - source and target compatibility, same as [Gradle Compile Spec](http://gradle.org/docs/current/dsl/org.gradle.api.tasks.compile.Compile.html)
-  - ecj warning and error flags, please refer to [Eclipse JDT Help](http://help.eclipse.org/), this section: `Java development user guid / Tasks / Compiling Java code / Using batch compiler`, gradle-ecj uses same default values
+  - source and target compatibility, use values in [Gradle Compile Spec](http://gradle.org/docs/current/dsl/org.gradle.api.tasks.compile.Compile.html)
+  - compilation warning and error flags, please refer to [Eclipse JDT Help](http://help.eclipse.org/), section: `Java development user guide / Tasks / Compiling Java code / Using batch compiler`, gradle-ecj uses default values descripted in that document
 
 You can override these default settings, by providing an `ecj` configuration closure, like this:
 
