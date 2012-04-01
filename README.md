@@ -19,6 +19,8 @@ buildscript {
             name = 'GitHub'
             addArtifactPattern 'http://cloud.github.com/downloads/[organisation]/[module]/[module]-[revision].[ext]'
         }
+
+        mavenCentral()
     }
 
     dependencies {
